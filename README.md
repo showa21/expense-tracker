@@ -1,5 +1,7 @@
 # Expense Tracker
 
+![expense-tracker screenshot](screenshot.png)
+
 A personal finance dashboard in vanilla JavaScript with a hand-drawn **Canvas donut chart**.
 
 - Add/delete expenses with category and date; data persists in `localStorage`
