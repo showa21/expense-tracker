@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expense Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Expense Tracker</h1>
+<section class="summary">
+  <div><small>Total</small><strong id="total">$0.00</strong></div>
+  <div><small>This month</small><strong id="month">$0.00</strong></div>
+</section>
+<div class="grid">
+  <section>
+    <form id="form">
+      <input id="desc" placeholder="Description" required>
+      <input id="amount" placeholder="Amount" inputmode="decimal" required>
+      <select id="category"><option>Food</option><option>Transport</option><option>Housing</option><option>Fun</option><option>Other</option></select>
+      <input id="date" type="date" required>
+      <button>Add expense</button>
+    </form>
+    <ul id="list"></ul>
+  </section>
+  <section><canvas id="chart" width="360" height="360" aria-label="Spending by category"></canvas><ul id="legend"></ul></section>
+</div>
+<script src="calc.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
